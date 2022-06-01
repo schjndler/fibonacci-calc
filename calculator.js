@@ -1,28 +1,15 @@
-/*function calculate(n){
-    if (n < 2){
-      return 1;
-    } else {
-      return calculate(n - 2) + calculate(n - 1);
-    }
-  }
-*/
-
-function calculate(n)
-{
-  if(n<=2){
+function calculate(n) {
+  if (n <= 2) {
     return 1;
-  }else{
-    let a =0;
-    let b =0;
+  } else {
+    let a = 0;
+    let b = 0;
     let c = 1;
-    for(let i =2  ;i <=n; i++){
-      
-      a=b;
-      b=c;
-      c=a+b;
+    for (let i = 2; i <= n; i++) {
+      a = b;
+      b = c;
+      c = a + b;
     }
     return c;
   }
 }
-
-**// ZWEI ZEILEN
